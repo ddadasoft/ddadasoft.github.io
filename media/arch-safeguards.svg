@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="값을 바꾸는 절차와 안전장치">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0a6a5c"/></marker></defs>
+<rect width="1600" height="900" fill="#f7f6f3"/>
+<text x="80" y="104" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="46" font-weight="800" fill="#161615">값을 바꾸는 절차와 안전장치</text>
+<text x="80" y="152" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="26" fill="#585750">저장은 초안이고, 발행해야 사이트에 반영됩니다 (artdg.com 관리자)</text>
+<rect x="80" y="220" width="250" height="220" rx="14" fill="#ffffff" stroke="#cfcdc3" stroke-width="2"/>
+<text x="104" y="272" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="30" font-weight="800" fill="#161615" text-anchor="start">운영자 입력</text>
+<text x="104" y="320" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#585750" text-anchor="start">관리자에서 값 변경</text>
+<line x1="330" y1="325" x2="373" y2="325" stroke="#0a6a5c" stroke-width="3" marker-end="url(#a)"/>
+<rect x="377" y="220" width="250" height="220" rx="14" fill="#e3f1ee" stroke="#0a6a5c" stroke-width="2"/>
+<text x="401" y="272" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="30" font-weight="800" fill="#0a6a5c" text-anchor="start">가격 기준 검사</text>
+<text x="401" y="320" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#585750" text-anchor="start">원본가 50%</text>
+<text x="401" y="356" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#585750" text-anchor="start">미만 불가</text>
+<text x="401" y="392" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#585750" text-anchor="start">1회 인하 25% 이내</text>
+<line x1="627" y1="325" x2="670" y2="325" stroke="#0a6a5c" stroke-width="3" marker-end="url(#a)"/>
+<rect x="674" y="220" width="250" height="220" rx="14" fill="#e3f1ee" stroke="#0a6a5c" stroke-width="2"/>
+<text x="698" y="272" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="30" font-weight="800" fill="#0a6a5c" text-anchor="start">초안 저장</text>
+<text x="698" y="320" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#585750" text-anchor="start">버전 확인</text>
+<text x="698" y="356" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#585750" text-anchor="start">동시 수정이면</text>
+<text x="698" y="392" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#585750" text-anchor="start">한쪽을 거부</text>
+<line x1="924" y1="325" x2="967" y2="325" stroke="#0a6a5c" stroke-width="3" marker-end="url(#a)"/>
+<rect x="971" y="220" width="250" height="220" rx="14" fill="#ffffff" stroke="#cfcdc3" stroke-width="2"/>
+<text x="995" y="272" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="30" font-weight="800" fill="#161615" text-anchor="start">발행</text>
+<text x="995" y="320" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#585750" text-anchor="start">검증 후</text>
+<text x="995" y="356" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#585750" text-anchor="start">정적 파일 생성</text>
+<line x1="1221" y1="325" x2="1264" y2="325" stroke="#0a6a5c" stroke-width="3" marker-end="url(#a)"/>
+<rect x="1268" y="220" width="250" height="220" rx="14" fill="#ffffff" stroke="#cfcdc3" stroke-width="2"/>
+<text x="1292" y="272" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="30" font-weight="800" fill="#161615" text-anchor="start">사이트 반영</text>
+<text x="1292" y="320" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#585750" text-anchor="start">발행 이력 기록</text>
+<rect x="80" y="470" width="1440" height="70" rx="14" fill="#efeee8" stroke="#cfcdc3" stroke-width="2"/>
+<text x="110" y="516" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="26" font-weight="700" fill="#161615" text-anchor="start">모든 변경에 감사 기록이 남습니다: 누가 무엇을 바꿨는지 알 수 없게 되는 일을 막습니다</text>
+<rect x="80" y="580" width="700" height="250" rx="14" fill="#ffffff" stroke="#cfcdc3" stroke-width="2"/>
+<text x="104" y="628" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="30" font-weight="800" fill="#161615" text-anchor="start">가격 기준은 한 곳에</text>
+<text x="104" y="670" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#585750" text-anchor="start">판매 판정, 관리자 입력, 주문 데이터가</text>
+<text x="104" y="708" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#585750" text-anchor="start">같은 하한(원본가 50%)을 씁니다.</text>
+<text x="104" y="746" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#585750" text-anchor="start">기준이 화면마다 달라지는 사고를 막기 위해서입니다.</text>
+<rect x="820" y="580" width="700" height="250" rx="14" fill="#ffffff" stroke="#cfcdc3" stroke-width="2"/>
+<text x="844" y="628" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="30" font-weight="800" fill="#161615" text-anchor="start">배포 실수를 먼저 막았습니다</text>
+<text x="844" y="670" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#585750" text-anchor="start">뒤처진 코드나 커밋하지 않은 변경이 있으면</text>
+<text x="844" y="708" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#585750" text-anchor="start">배포가 시작되지 않습니다.</text>
+<text x="844" y="746" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" font-weight="400" fill="#585750" text-anchor="start">단위·계약 테스트, 화면 E2E 테스트, 운영 문서(RUNBOOK)</text>
+</svg>
