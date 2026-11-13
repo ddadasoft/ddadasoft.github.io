@@ -72,6 +72,7 @@
       <a href="#arch">설계 결정</a>
       <a href="#ch2">관리자</a>
       <a href="#ch3">주문</a>
+      <a href="#seo">검색</a>
       <a href="#ch4">함께 드린 것</a>
       <a href="#state">만든 기능</a>
     </nav>
@@ -95,7 +96,7 @@
   <div class="areas">
     <span class="k">다룬 영역</span>
     <ul class="chips">
-      <li>쇼핑몰</li><li>관리자</li><li>데이터 이전</li><li>결제 연동</li><li>배포와 테스트</li>
+      <li>쇼핑몰</li><li>관리자</li><li>데이터 이전</li><li>결제 연동</li><li>검색 노출</li><li>배포와 테스트</li>
     </ul>
   </div>
   </div>
@@ -104,7 +105,7 @@
   <dl class="facts">
     <div><dt>성격</dt><dd>옮겨서 다시 만든 사이트입니다. 처음부터 만든 것은 아닙니다.</dd></div>
     <div><dt>공개</dt><dd>운영 중인 쇼핑몰입니다. 화면은 artdg.com에서 볼 수 있습니다.</dd></div>
-    <div><dt>규모</dt><dd>커밋 288개, 활동일 8일</dd></div>
+    <div><dt>규모</dt><dd>커밋 515개, 활동일 15일</dd></div>
     <div><dt>링크</dt><dd><a href="https://artdg.com/" rel="noopener">실서비스 보기: artdg.com</a></dd></div>
   </dl>
 </div>
@@ -116,16 +117,17 @@
         <div class="label"><b>01</b><span>이관과 구조</span></div>
         <h2>상품 135개를 새 구조로 옮겼습니다</h2>
         <p>범위는 옛 상품을 새 구조로 옮기고, 손님이 상품을 찾아 수량을 계산하고 장바구니에 담게 하는 것이었습니다. 상품 데이터는 옛 사이트 DB에서 가져왔습니다.</p>
-        <p class="small">상품 135개, 안내 페이지 5개, 묶음 할인 규칙 2종, 상품정보 응답 52~170ms입니다.</p>
+        <p class="small">지금은 상품 137개, 분류 37개, 안내 페이지 5개, 묶음 할인 규칙 2종입니다. 상품정보 응답은 52~170ms입니다.</p>
       </div>
       <table class="kv">
         <caption>구성 요소</caption>
         <thead><tr><th scope="col">구성</th><th scope="col">내용</th></tr></thead>
         <tbody>
           <tr><th scope="row">사용자 화면</th><td>Next.js 정적 사이트. 카탈로그, 검색, 분류, 규격·가격·묶음 단위 표시, 수량 계산, 장바구니.</td></tr>
-          <tr><th scope="row">실행 환경</th><td>Cloudflare Workers와 D1 위에서 동작합니다.</td></tr>
+          <tr><th scope="row">박스 단가표</th><td>모든 판매 단위를 분류별로 모은 표입니다. 화면 그대로 인쇄할 수 있고, 인쇄본에는 단가표 주소 QR코드가 들어갑니다.</td></tr>
+          <tr><th scope="row">실행 환경</th><td>Cloudflare Workers와 D1 위에서 동작합니다. 주문 API는 서울 가까운 지역에서 돌게 배치했습니다.</td></tr>
           <tr><th scope="row">관리자</th><td>들어가는 길을 따로 두고 접근을 제한합니다. 상품, 설정, 사이트 글을 정해 둔 항목에 맞춰 고치고 발행합니다.</td></tr>
-          <tr><th scope="row">품질</th><td>자동 테스트, 화면을 눌러 보는 테스트, 코드가 뒤처지면 배포가 멈추는 장치, 운영 문서가 있습니다.</td></tr>
+          <tr><th scope="row">품질</th><td>자동 테스트 515개, 화면을 눌러 보는 테스트 29개, 코드가 뒤처지면 배포가 멈추는 장치, 운영 문서가 있습니다.</td></tr>
         </tbody>
       </table>
     </div>
@@ -251,7 +253,7 @@
       </div>
       <div>
         <h3>관리자 화면 범위</h3>
-        <p class="muted t">상품·옵션, 카테고리, 판매 기준, 구매 규칙, 묶음 할인, 배송, 안내·법적 표기, 사업자 정보, 페이지·리다이렉트, 발행, 연결 점검.</p>
+        <p class="muted t">상품·옵션, 카테고리, 모음, 판매 기준, 구매 규칙, 묶음 할인, 배송, 안내·법적 표기, 사업자 정보, 페이지·옛 주소 보내기, 발행 대기, 변경 이력, 연결 점검, 시스템 상태.</p>
         <p class="small t">이 목록은 코드를 보고 확인했습니다. 아래 영상과 화면 5장은 운영 화면을 직접 열었고, 나머지는 눌러 보지 않았습니다.</p>
       </div>
     </div>
@@ -319,6 +321,7 @@
         <tbody>
           <tr><th scope="row">가격 인하 1회 25% 이내</th><td>한 번에 가격을 크게 내리는 입력 실수</td></tr>
           <tr><th scope="row">원본가 50% 미만 불가</th><td>원본가의 절반 아래로 내리는 변경</td></tr>
+          <tr><th scope="row">가격 인상은 원본가 2배까지</th><td>자릿수를 잘못 넣어 가격이 크게 오르는 입력 실수</td></tr>
           <tr><th scope="row">변경 감사 기록</th><td>누가 무엇을 바꿨는지 알 수 없게 되는 일</td></tr>
           <tr><th scope="row">버전 충돌 방지</th><td>두 곳에서 동시에 고칠 때 한쪽이 다른 쪽을 덮어쓰는 일</td></tr>
           <tr><th scope="row">발행 절차</th><td>초안 상태의 변경이 사용자 화면에 바로 반영되는 일. 발행 이력이 남습니다.</td></tr>
@@ -337,24 +340,68 @@
       </div>
       <div>
         <p class="state ok"><svg class="ic" aria-hidden="true"><use href="#i-done"/></svg><strong>연동 완료</strong></p>
-        <p class="t">네이버페이 결제가 연동되어 정상 동작합니다.</p>
+        <p class="t">네이버페이 결제가 연동되어 정상 동작합니다. 장바구니에서 버튼을 누르면 서버가 가격을 다시 계산해 주문을 등록하고, 네이버페이 주문서가 열립니다.</p>
       </div>
+    </div>
+
+    <figure class="arch-fig">
+      <a href="media/npay-flow.svg" target="_blank" rel="noopener"><img src="media/npay-flow.svg" width="1600" height="900" loading="lazy" alt="네이버페이 주문 등록 흐름: 장바구니, 네이버페이 버튼, 서버 검사, 주문 등록, 결과 확인. 등록 성공이면 네이버페이 주문서를 열고, 거절이면 안내를 보여 주고, 결과 불명이면 자동으로 다시 등록하지 않습니다."></a>
+      <figcaption class="small">주문 등록 흐름입니다. 버튼을 누른 뒤 네이버페이 주문서가 열릴 때까지의 순서입니다.</figcaption>
+    </figure>
+
+    <table class="kv">
+      <caption>주문 등록 단계</caption>
+      <thead><tr><th scope="col">단계</th><th scope="col">하는 일</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">장바구니</th><td>담은 상품은 기기에만 저장합니다. 구매를 시작할 때 구매 번호를 붙입니다.</td></tr>
+        <tr><th scope="row">네이버페이 버튼</th><td>약관 동의를 확인한 뒤 주문 등록을 요청합니다.</td></tr>
+        <tr><th scope="row">서버 검사</th><td>요청이 온 출처와 세션을 확인하고, 호출량을 제한합니다. 가격은 화면 값을 쓰지 않고 서버가 다시 계산합니다.</td></tr>
+        <tr><th scope="row">주문 등록</th><td>구매 번호를 기록한 뒤 네이버페이에 주문을 등록합니다. 같은 번호가 다시 오면 새로 등록하지 않고 저장된 결과를 돌려줍니다.</td></tr>
+        <tr><th scope="row">결과 확인</th><td>성공이면 네이버페이 주문서를 엽니다. 거절이면 안내를 보여 줍니다. 응답이 없어 결과를 모르면 자동으로 다시 등록하지 않습니다.</td></tr>
+        <tr><th scope="row">시간 측정</th><td>버튼을 누른 뒤의 대기 시간을 브라우저와 서버 구간으로 나눠 기록합니다.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="ch" id="seo">
+  <div class="wrap">
+    <div class="split">
+      <div class="side">
+        <div class="label"><b>05</b><span>검색과 옛 주소</span></div>
+        <h2>검색에 잡히게 하고, 옛 주소를 살렸습니다</h2>
+        <p>사이트를 옮기면 검색 결과에 남은 옛 주소가 끊깁니다. 옛 주소를 새 주소로 보내고, 검색 엔진이 읽는 자료를 갖췄습니다.</p>
+      </div>
+      <table class="kv">
+        <caption>검색과 주소</caption>
+        <thead><tr><th scope="col">항목</th><th scope="col">내용</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">구조화 데이터</th><td>홈에는 회사 정보를, 상품 화면에는 상품과 가격 범위 정보를 넣었습니다.</td></tr>
+          <tr><th scope="row">sitemap.xml</th><td>상품, 분류, 안내 페이지 주소 183개를 빌드할 때 만듭니다. robots.txt가 이 주소를 알려 줍니다.</td></tr>
+          <tr><th scope="row">옛 주소 301</th><td>그누보드와 영카트 시절의 상품, 분류, 안내 주소를 새 주소로 보냅니다.</td></tr>
+          <tr><th scope="row">가격비교 상품 피드</th><td>네이버쇼핑 가격비교 형식의 상품 목록 파일을 사이트가 직접 내보냅니다.</td></tr>
+          <tr><th scope="row">방문과 전환 측정</th><td>GA4와 네이버 전환 이벤트를 달았습니다. 관리자 접속은 측정에서 뺍니다.</td></tr>
+          <tr><th scope="row">부가세 표기</th><td>상품 상세와 장바구니에 부가세 포함 표기를 넣었습니다.</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
 
-<section class="ch" id="ch4">
+<section class="ch band alt" id="ch4">
   <div class="wrap">
     <div class="split">
       <div class="side">
-        <div class="label"><b>05</b><span>함께 드린 것</span></div>
+        <div class="label"><b>06</b><span>함께 드린 것</span></div>
         <h2>테스트와 운영 문서를 갖췄습니다</h2>
       </div>
       <div>
         <p class="t">소스와 디자인은 다시 쓸 수 있습니다. 고객에게 소스 전체를 넘기는지는 계약마다 정합니다.</p>
         <ul class="checks">
-          <li>자동 테스트와 화면을 눌러 보는 테스트가 있습니다.</li>
-          <li>코드가 뒤처지면 배포가 시작되지 않습니다.</li>
+          <li>자동 테스트는 57개 파일에 515개입니다. 화면을 눌러 보는 테스트는 29개입니다.</li>
+          <li>테스트는 주문이 두 번 등록되지 않는지, 품절과 최소 수량을 지키는지, 관리자 인증이 막히는지를 봅니다.</li>
+          <li>코드가 뒤처졌거나 커밋하지 않은 변경이 있으면 배포가 시작되지 않습니다.</li>
+          <li>배포는 사진 검사, 가격 구조 검사, 빌드, DB 변경 적용, 업로드, 배포 뒤 일치 검사 순서로 한 번에 돕니다.</li>
           <li>배포 방법과 관리자 매뉴얼을 운영 문서로 남겼습니다.</li>
         </ul>
         <p><a href="#state">만든 기능 보기</a> · <a href="index.html#process">함께 드린 것 보기</a></p>
@@ -363,15 +410,15 @@
   </div>
 </section>
 
-<section class="ch band alt" id="state">
+<section class="ch" id="state">
   <div class="wrap">
     <div class="split">
       <div class="side">
-        <div class="label"><b>06</b><span>구현 상태</span></div>
+        <div class="label"><b>07</b><span>구현 상태</span></div>
         <h2>만든 기능</h2>
         <p>이 사례에 들어 있는 기능입니다.</p>
         <div class="legend">
-          <span class="done"><svg class="ic" aria-hidden="true"><use href="#i-done"/></svg><span class="fg">구현</span><b>8</b></span>
+          <span class="done"><svg class="ic" aria-hidden="true"><use href="#i-done"/></svg><span class="fg">구현</span><b>12</b></span>
         </div>
       </div>
       <table>
@@ -387,6 +434,10 @@
         <tr><th scope="row">묶음 할인·배송·구매 규칙 설정</th><td class="st done"><svg class="ic" aria-hidden="true"><use href="#i-done"/></svg>구현</td><td class="nt"></td></tr>
         <tr><th scope="row">변경 이력·감사 기록</th><td class="st done"><svg class="ic" aria-hidden="true"><use href="#i-done"/></svg>구현</td><td class="nt"></td></tr>
         <tr><th scope="row">정적 배포와 자동 테스트</th><td class="st done"><svg class="ic" aria-hidden="true"><use href="#i-done"/></svg>구현</td><td class="nt"></td></tr>
+        <tr><th scope="row">박스 단가표와 인쇄</th><td class="st done"><svg class="ic" aria-hidden="true"><use href="#i-done"/></svg>구현</td><td class="nt"></td></tr>
+        <tr><th scope="row">구조화 데이터·sitemap·옛 주소 301</th><td class="st done"><svg class="ic" aria-hidden="true"><use href="#i-done"/></svg>구현</td><td class="nt"></td></tr>
+        <tr><th scope="row">가격비교 상품 피드</th><td class="st done"><svg class="ic" aria-hidden="true"><use href="#i-done"/></svg>구현</td><td class="nt"></td></tr>
+        <tr><th scope="row">방문과 전환 측정</th><td class="st done"><svg class="ic" aria-hidden="true"><use href="#i-done"/></svg>구현</td><td class="nt"></td></tr>
         <tr class="hl"><th scope="row">네이버페이 결제</th><td class="st done"><svg class="ic" aria-hidden="true"><use href="#i-done"/></svg>구현</td><td class="nt">연동되어 정상 동작합니다.</td></tr>
       </tbody>
     </table>

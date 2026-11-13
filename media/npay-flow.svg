@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="네이버페이 주문 등록 흐름">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#0a6a5c"/></marker></defs>
+<rect width="1600" height="900" fill="#f7f6f3"/>
+<text x="80" y="104" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="46" font-weight="800" fill="#161615">네이버페이 주문 등록 흐름</text>
+<text x="80" y="152" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="26" fill="#585750">장바구니에서 버튼을 누른 뒤 네이버페이 주문서가 열릴 때까지 (artdg.com)</text>
+<rect x="80" y="220" width="250" height="220" rx="14" fill="#ffffff" stroke="#cfcdc3" stroke-width="2"/>
+<text x="104" y="272" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="28" font-weight="800" fill="#161615">1 장바구니</text>
+<text x="104" y="320" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" fill="#585750">기기에만 저장</text>
+<text x="104" y="356" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" fill="#585750">구매 번호를</text>
+<text x="104" y="392" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" fill="#585750">붙입니다</text>
+<line x1="330" y1="325" x2="373" y2="325" stroke="#0a6a5c" stroke-width="3" marker-end="url(#a)"/>
+<rect x="377" y="220" width="250" height="220" rx="14" fill="#ffffff" stroke="#cfcdc3" stroke-width="2"/>
+<text x="401" y="272" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="28" font-weight="800" fill="#161615">2 네이버페이 버튼</text>
+<text x="401" y="320" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" fill="#585750">약관 동의 확인</text>
+<text x="401" y="356" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" fill="#585750">주문 등록 요청</text>
+<line x1="627" y1="325" x2="670" y2="325" stroke="#0a6a5c" stroke-width="3" marker-end="url(#a)"/>
+<rect x="674" y="220" width="250" height="220" rx="14" fill="#e3f1ee" stroke="#0a6a5c" stroke-width="2"/>
+<text x="698" y="272" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="28" font-weight="800" fill="#0a6a5c">3 서버 검사</text>
+<text x="698" y="320" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" fill="#585750">출처·세션 확인</text>
+<text x="698" y="356" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" fill="#585750">호출량 제한</text>
+<text x="698" y="392" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" fill="#585750">가격을 다시 계산</text>
+<line x1="924" y1="325" x2="967" y2="325" stroke="#0a6a5c" stroke-width="3" marker-end="url(#a)"/>
+<rect x="971" y="220" width="250" height="220" rx="14" fill="#e3f1ee" stroke="#0a6a5c" stroke-width="2"/>
+<text x="995" y="272" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="28" font-weight="800" fill="#0a6a5c">4 주문 등록</text>
+<text x="995" y="320" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" fill="#585750">구매 번호 기록</text>
+<text x="995" y="356" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" fill="#585750">네이버페이에</text>
+<text x="995" y="392" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" fill="#585750">주문 등록</text>
+<line x1="1221" y1="325" x2="1264" y2="325" stroke="#0a6a5c" stroke-width="3" marker-end="url(#a)"/>
+<rect x="1268" y="220" width="250" height="220" rx="14" fill="#ffffff" stroke="#cfcdc3" stroke-width="2"/>
+<text x="1292" y="272" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="28" font-weight="800" fill="#161615">5 결과 확인</text>
+<text x="1292" y="320" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" fill="#585750">결과를 저장하고</text>
+<text x="1292" y="356" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" fill="#585750">화면에 응답</text>
+<rect x="80" y="470" width="1440" height="70" rx="14" fill="#efeee8" stroke="#cfcdc3" stroke-width="2"/>
+<text x="110" y="516" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="26" font-weight="700" fill="#161615">같은 구매 번호가 다시 오면 새로 등록하지 않고 저장된 결과를 돌려줍니다</text>
+<rect x="80" y="580" width="456" height="250" rx="14" fill="#e3f1ee" stroke="#0a6a5c" stroke-width="2"/>
+<text x="104" y="628" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="30" font-weight="800" fill="#0a6a5c">등록 성공</text>
+<text x="104" y="676" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" fill="#585750">받은 등록 키로</text>
+<text x="104" y="714" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" fill="#585750">네이버페이 주문서를 엽니다.</text>
+<rect x="572" y="580" width="456" height="250" rx="14" fill="#ffffff" stroke="#cfcdc3" stroke-width="2"/>
+<text x="596" y="628" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="30" font-weight="800" fill="#161615">등록 거절</text>
+<text x="596" y="676" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" fill="#585750">주문은 만들어지지 않습니다.</text>
+<text x="596" y="714" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" fill="#585750">화면에 안내를 보여 줍니다.</text>
+<rect x="1064" y="580" width="456" height="250" rx="14" fill="#ffffff" stroke="#cfcdc3" stroke-width="2"/>
+<text x="1088" y="628" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="30" font-weight="800" fill="#161615">결과 불명</text>
+<text x="1088" y="676" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" fill="#585750">응답이 없으면 자동으로</text>
+<text x="1088" y="714" font-family="Apple SD Gothic Neo, Noto Sans KR, Malgun Gothic, sans-serif" font-size="24" fill="#585750">다시 등록하지 않습니다.</text>
+</svg>

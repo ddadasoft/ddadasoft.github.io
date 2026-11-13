@@ -353,3 +353,5 @@ tr.hl th{padding-left:0}
 }
 
 .arch-fig{margin:2rem 0}.arch-fig img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:var(--r)}.arch-fig figcaption{margin-top:.5rem}
+
+.feat .links a+a{margin-left:1.5rem}
